@@ -1,6 +1,6 @@
-# crandalf: No More "YOU SHALL NOT PASS"
+# formatR
 
-[![Build Status](https://travis-ci.org/yihui/crandalf.svg?branch=master)](https://travis-ci.org/yihui/crandalf)
+[![Build Status](https://travis-ci.org/yihui/crandalf.svg?branch=pkg/formatR)](https://travis-ci.org/yihui/crandalf)
 
 There are a lot of things to check before you submit an R package to CRAN, and
 the last thing is probably to make sure your new version will not break any
