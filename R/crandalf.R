@@ -74,7 +74,7 @@ pkg_branch = function() {
 #' @rdname pkg_branch
 #' @description For \code{pkg_commit()}, the package named is detected from the
 #'   current commit message, which should contain a character string of the form
-#'   \code{[crandalf user/repo]}, where \code{user/repo} is a repository on
+#'   \code{[crandalf pkg@user/repo]}, where \code{user/repo} is a repository on
 #'   Github.
 #' @export
 pkg_commit = function() {
@@ -301,6 +301,8 @@ need_compile = function(p) {
 #' @param p the package name
 #' @export
 install_deps = function(p) {
+  if (pkg_loadable(p)) return()
+  apt_get(p)
   if (pkg_loadable(p)) return()
   message('Installing ', p)
   if (need_compile(p)) apt_get(p, 'build-dep')

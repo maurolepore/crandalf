@@ -1,4 +1,4 @@
-if (Sys.getenv('TRAVIS') != 'true') q('no')
+if (Sys.getenv('SHIPPABLE') != 'true') q('no')
 
 library(crandalf)
 config = pkg_config
