@@ -2,6 +2,10 @@ language: java
 cache: true
 build_image: shippableimages/ubuntu1404_java
 
+branches:
+  only:
+    - shippable
+
 jdk:
   - openjdk7
 
