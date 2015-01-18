@@ -301,6 +301,8 @@ need_compile = function(p) {
 #' @export
 install_deps = function(p) {
   if (pkg_loadable(p)) return()
+  apt_get(p)
+  if (pkg_loadable(p)) return()
   message('Installing ', p)
   if (need_compile(p)) apt_get(p, 'build-dep')
   # p is not loadable, and it might be due to its dependencies are not loadable
