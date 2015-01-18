@@ -8,7 +8,7 @@ env:
     - R_LIBS_USER=~/R R_TEXI2DVICMD=texi2dvi _R_CHECK_CRAN_INCOMING_=FALSE _R_CHECK_FORCE_SUGGESTS_=false
   matrix:
 # matrix-start
-    - R_CHECK_PACKAGES="knitr Rd2roxygen Rz"
+    - R_CHECK_PACKAGES="knitr pvar Rd2roxygen Rz spca"
 # matrix-end
 
 before_install:
