@@ -7,7 +7,7 @@ env:
     - _R_CHECK_CRAN_INCOMING_=FALSE _R_CHECK_FORCE_SUGGESTS_=false
   matrix:
 # matrix-start
-    - R_CHECK_PACKAGES=""
+    - R_CHECK_PACKAGES="anim.plots EFDR gfcanalysis heplots idm MSG ndtv phytools pitchRx plotKML RGraphics spdynmod srd stream surveillance TED"
 # matrix-end
 
 before_install:
